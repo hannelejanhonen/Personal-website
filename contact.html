@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <title>Hannele Janhonen - Contact me</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- SEO meta tags -->
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <!-- Custom Styles -->
+  <link rel="stylesheet" type="text/css" href="css/custom.css">
+  <!-- Font styles -->
+  <!-- Font awwsome -->
+  <script src="https://kit.fontawesome.com/98330a4a6a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <!-- Brand -->
+      <a class="navbar-brand" href="home.html">Hannele Janhonen</a>
+      <!-- Toggler/collapsibe Button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="collapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Links to other pages -->
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <div class="navbar-nav ml-auto">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb bg-light">
+              <li class="breadcrumb-item active"><a href="home.html">Home</a></li>
+              <li class="breadcrumb-item"><a href="about.html">About</a></li>
+              <li class="breadcrumb-item"><a href="skills.html">Skills</a></li>
+              <li class="breadcrumb-item"><a href="education.html">Education</a></li>
+              <li class="breadcrumb-item"><a href="projects.html">Projects</a></li>
+              <li class="breadcrumb-item"><a href="resume.html">Resume</a></li>
+              <li class="breadcrumb-item"><a href="gallery.html">Gallery</a></li>
+              <li class="breadcrumb-item"><a href="references.html">References</a></li>
+              <li class="breadcrumb-item" aria-current="page">Contact</a></li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Jumbotron -->
+  <div class="jumbotron jumbotron-fluid container-fluid text-white" style="background-image: url(images/window.jpg); background-size: cover;">
+    <div class="container jumbotron-text">
+      <h1 class="font-weight-light">Contact me.</h1>
+      <p class="lead">If you have a project that you want to get started or think you need my help with something, don't hesitate to get in touch.</p>
+    </div>
+  </div>
+
+<main>
+  <!-- Container for contact details -->
+  <div class="container text-center">
+
+    <h2 class="featurette-heading">Get in touch.</h2>
+    <p class="lead">You can send me a direct message on email or social media or send your message on a form below. I look forward to hearing from you.</p>
+    <a href="mailto:hjanhonen@outlook.com"><button type="button" class="btn btn-outline-warning text-dark">Send email</button></a>
+    <br><br>
+    <a href="https://linkedin.com/in/hannele-janhonen" target="_blank"><span style="color: grey;"><i class="fab fa-linkedin fa-2x"></i></a>
+    <a href="https://github.com/hannelejanhonen" target="_blank"><span style="color: grey;"><i class="fab fa-github-square fa-2x"></i></a>
+    <a href="https://instagram.com/hannelejanhonen/?hl=fi" target="_blank"><span style="color: grey;"><i class="fab fa-instagram-square fa-2x"></i></a>
+    <a href="https://www.facebook.com" target="_blank"><span style="color: grey;"><i class="fab fa-facebook-square fa-2x"></i></a>
+    <br>
+  </div>
+
+  <!-- Contact form-->
+  <div class="container pt-5">  <!-- pt-5 means add a top padding-->
+
+    <form action="/action_page.php" class="needs-validation" novalidate> <!--tarvitsee php ohjelman lähettämiseen. needs-validation will add the validation effect AFTER the form has been submitting (if there's anything missing).-->
+      <div class="form-group input-group mb-3"> <!--Add a wrapper element with .form-group, around each form control, to ensure proper margins-->
+        <input type="text" class="form-control" id="name" placeholder="Your name" name="name" required>
+        <div class="input-group-prepend">
+          <span class="input-group-text">Name</span></div>
+        <div class="valid-feedback"></div>
+        <div class="invalid-feedback">Please fill out this field.</div>
+      </div>
+      <div class="form-group input-group mb-3">
+        <input type="email" class="form-control" id="email" placeholder="Your email" required>
+        <div class="input-group-append">
+          <span class="input-group-text">@example.com</span>
+        </div>
+        <div class="valid-feedback"></div>
+        <div class="invalid-feedback">Please fill out this field.</div>
+      </div>
+      <div class="textarea">
+        <input type="text" class="form-control" rows="10" cols="30" maxlength="255" id="message" placeholder="Your message" required>
+        <div class="valid-feedback"></div>
+        <div class="invalid-feedback">Please fill out this field.</div>
+      </div>
+      <br>
+      <button type="submit" class="btn btn-primary">Submit</button>
+      <button type="reset" class="btn btn-primary">Refresh</button>
+  </div>
+  </div>
+  </form>
+  </div>
+
+  <div class="container">
+      <hr class="featurette-divider">
+  </div>
+
+<!-- script for form-->
+  <script>
+    // Disable form submissions if there are invalid fields
+    (function() {
+      'use strict';
+      window.addEventListener('load', function() {
+        // Get the forms we want to add validation styles to
+        var forms = document.getElementsByClassName('needs-validation');
+        // Loop over them and prevent submission
+        var validation = Array.prototype.filter.call(forms, function(form) {
+          form.addEventListener('submit', function(event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          }, false);
+        });
+      }, false);
+    })();
+  </script>
+
+  <!-- Message to user after submitting the form-->
+  <div id="success" class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+      <div class="alert alert-success">
+        <p>Thank you for your message! I'll get back to you! </p>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+
+  <script>
+    (function() {
+      'use strict';
+      window.addEventListener('load', function() {
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.getElementsByClassName('needs-validation');
+        // Loop over them and prevent submission
+        var validation = Array.prototype.filter.call(forms, function(form) {
+          form.addEventListener('submit', function(event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            } else if (form.checkValidity() == true) {
+              $('#success').modal("show");
+
+              // stop form submit only for demo
+              event.preventDefault();
+            }
+            form.classList.add('was-validated');
+          }, false);
+        });
+      }, false);
+    })();
+  </script>
+
+</main>
+  <!-- FOOTER -->
+  <footer class="footer font-small mdb-color pt-4 bg-dark">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center text-light">
+          <h4 class="font-weight-light">Get in touch!</h4>
+          <a href="mailto:hjanhonen@outlook.com" target="_blank"><span style="color: white;"><i class="fas fa-envelope-square fa-2x"></i>
+              <a href="https://linkedin.com/in/hannele-janhonen" target="_blank"><span style="color: white;"><i class="fab fa-linkedin fa-2x"></i></a>
+              <a href="https://github.com/hannelejanhonen" target="_blank"><span style="color: white;"><i class="fab fa-github-square fa-2x"></i></a>
+              <a href="https://instagram.com/hannelejanhonen/?hl=fi" target="_blank"><span style="color: white;"><i class="fab fa-instagram-square fa-2x"></i></a>
+              <a href="https://www.facebook.com" target="_blank"><span style="color: white;"><i class="fab fa-facebook-square fa-2x"></i></a>
+        </div>
+      </div>
+    </div>
+    </div>
+    <!-- Copyright -->
+    <div class="footer-copyright">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center text-light">
+            <p>©2020 Hannele Janhonen</p>
+          </div>
+        </div>
+      </div>
+  </footer>
+
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

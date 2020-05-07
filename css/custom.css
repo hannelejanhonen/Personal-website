@@ -1,0 +1,150 @@
+body {
+  padding-top: 3.5rem; /* Move down content because of fixed navbar that is 3.5rem tall */
+  }
+
+/*Home page
+-------------------------................. */
+
+/*Cover image*/
+.frontpage {
+  height: 100vh;
+  min-height: 500px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 3.5rem;
+}
+
+/*Transparent image text on cover image*/
+.content {
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.4); /* Black background with 0.5 opacity */
+  color: #f1f1f1; /* Grey text */
+  padding: 20px; /* Some padding */
+  letter-spacing: 0.3rem;
+}
+
+/* Featurettes
+----------------------------------------------------- */
+
+.featurette-divider {
+  margin: 5rem 0; /* Space out the <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -.05rem;
+
+}
+
+/* responsive css */
+
+.featurette-heading {
+    font-size: 50px;
+  }
+
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+
+
+/*Jumbotron
+-------------------------------------------------- */
+
+.jumbotron {
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    margin-bottom: 3.5rem;
+  }
+
+.jumbotron-text {
+  margin-top: 5rem;
+  text-align: center;
+}
+
+/*Navigation bar
+-------------------------------------------------- */
+
+.banner-text {
+  font-family: 'Merriweather', serif;
+  font-size: 4.5rem;
+  text-align: left;
+}
+
+.nav-item {
+  decoration: none;
+}
+
+
+/* Progress bar in skills page
+-------------------------------------------------- */
+
+.labels {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  span {
+    color: #666;
+  }
+}
+
+
+/*Footer
+-------------------------------------------------- */
+
+.footer {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.footer-copyright {
+  margin-top: 3rem;
+}
+
+
+/*Photos at About-page
+-------------------------------------------------- */
+/*The gutters between columns can be removed with .no-gutters. This removes the negative margins from .row and the horizontal padding from all immediate children columns.*/
+
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+
+  > .col,
+  > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+
+/* CAROUSEL AT GALLERY PAGE
+-------------------------------------------------- */
+
+/* Make the image fully responsive */
+.carousel-inner img {
+      width: 100%;
+      height: 100%;
+  }
+
+.carousel-indicators li {
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+}
+
+
+/* responsive css
+-------------------------------------------------- */
+
+@media (min-width: 40em) {
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
